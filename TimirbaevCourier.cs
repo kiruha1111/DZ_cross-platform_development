@@ -109,4 +109,14 @@ namespace Timirbaev_Erik_Lab_5
             Console.WriteLine($"Номер телефона: {phone}");
         }
     }
+        /// <summary>
+        /// Тестовый метод для проверки автоматической документации
+        /// </summary>
+        /// <param name="testParam">Тестовый параметр</param>
+        /// <returns>Всегда возвращает true</returns>
+        public bool TestAutoDocsMethod(string testParam)
+        {
+            Console.WriteLine("Auto-docs test: " + testParam);
+            return true;
+        }
 }
