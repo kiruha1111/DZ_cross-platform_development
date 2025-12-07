@@ -6,7 +6,7 @@ echo    СОЗДАНИЕ ДОКУМЕНТАЦИИ TIMIRBAEV_ERIK_LAB_5
 echo ====================================================
 echo.
 
-cd /d "D:\Desktop\Timirbaev_Erik_Lab_5"
+cd /d "D:\Desktop\DZ_cross-platform_development"
 
 echo Текущая папка: %CD%
 echo.
