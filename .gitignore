@@ -1,0 +1,44 @@
+# Doxygen документация
+docs/html/
+docs/latex/
+
+# Файлы сборки C#
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.msi
+*.ncb
+*.rdp
+*.sdf
+*.suo
+*.swp
+*.obj
+
+# Папки Visual Studio
+.vs/
+.vscode/
+.idea/
+.DS_Store
+
+# Пользовательские файлы
+*.user
+*.userosscache
+*.sln.docstates
+
+# Резервные копии
+*.backup
+*.bak
+
+# Doxygen временные файлы
+*.doxy
+*.dot
+*.tmp
+
+# Системные файлы
+Thumbs.db
+ehthumbs.db
+Desktop.ini

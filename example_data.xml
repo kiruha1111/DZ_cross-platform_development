@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfTimirbaevCourier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TimirbaevCourier>
+    <id>1</id>
+    <firstname>Иван</firstname>
+    <surname>Петров</surname>
+    <age>25</age>
+    <phone>9215551212</phone>
+  </TimirbaevCourier>
+  <TimirbaevAutoCourier>
+    <id>2</id>
+    <firstname>Анна</firstname>
+    <surname>Сидорова</surname>
+    <age>30</age>
+    <phone>9213334444</phone>
+    <car_model>Toyota Camry</car_model>
+    <car_number>A123BV777</car_number>
+  </TimirbaevAutoCourier>
+  <TimirbaevCourier>
+    <id>3</id>
+    <firstname>Сергей</firstname>
+    <surname>Иванов</surname>
+    <age>28</age>
+    <phone>9216667890</phone>
+  </TimirbaevCourier>
+</ArrayOfTimirbaevCourier>
