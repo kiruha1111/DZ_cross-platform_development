@@ -54,17 +54,6 @@ namespace Timirbaev_Erik_Lab_5
         public TimirbaevCourier() { id = ++MaxId; }
 		
 		/// <summary>
-        /// Тестовый метод для проверки автоматической документации
-        /// </summary>
-        /// <param name="testParam">Тестовый параметр</param>
-        /// <returns>Всегда возвращает true</returns>
-        public bool TestAutoDocsMethod(string testParam)
-        {
-            Console.WriteLine("Auto-docs test: " + testParam);
-            return true;
-        }
-
-        /// <summary>
         /// Виртуальный метод для создания курьера через консольный ввод.
         /// Запрашивает у пользователя данные и выполняет валидацию.
         /// </summary>
@@ -118,6 +107,17 @@ namespace Timirbaev_Erik_Lab_5
             Console.WriteLine($"Фамилия: {surname}");
             Console.WriteLine($"Возраст: {age}");
             Console.WriteLine($"Номер телефона: {phone}");
+        }
+		
+		/// <summary>
+        /// Тестовый метод для проверки автоматической документации
+        /// </summary>
+        /// <param name="testParam">Тестовый параметр</param>
+        /// <returns>Всегда возвращает true</returns>
+        public bool TestAutoDocsMethod(string testParam)
+        {
+            Console.WriteLine("Auto-docs test: " + testParam);
+            return true;
         }
     }
 }

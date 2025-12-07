@@ -7,14 +7,14 @@
 - Просмотра и управления списком курьеров
 
 ## Структура проекта
-Timirbaev_Erik_Lab_5/
-├── Program.cs - Главная программа с меню
-├── TimirbaevCourier.cs - Базовый класс курьера
-├── TimirbaevAutoCourier.cs - Класс авто-курьера
-├── TimirbaevPark.cs - Управление списком курьеров
-├── TimirbaevUtilities.cs - Вспомогательные методы
-├── AssemblyInfo.cs - Информация о сборке
-└── App.config - Конфигурация приложения
+**Timirbaev_Erik_Lab_5/**
+- `Program.cs` - Главная программа с меню
+- `TimirbaevCourier.cs` - Базовый класс курьера
+- `TimirbaevAutoCourier.cs` - Класс авто-курьера
+- `TimirbaevPark.cs` - Управление штатом курьеров
+- `TimirbaevUtilities.cs` - Вспомогательные методы
+- `AssemblyInfo.cs` - Информация о сборке
+- `App.config` - Конфигурация приложения
 
 ## Основные классы
 
