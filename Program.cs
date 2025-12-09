@@ -6,20 +6,11 @@ using System.Threading.Tasks;
 
 namespace Timirbaev_Erik_Lab_5
 {
-    /// <summary>
-    /// Главный класс программы, содержащий точку входа.
-    /// </summary>
     public class Program
     {
-        /// <summary>
-        /// Точка входа в приложение. Запускает главное меню управления курьерской службой.
-        /// </summary>
-        /// <param name="args">Аргументы командной строки (не используются).</param>
         static void Main(string[] args)
         {
-            // Создание объекта для управления парком курьеров
             TimirbaevPark products = new TimirbaevPark();
-            // Основной цикл программы
             while (true)
             {
                 Console.WriteLine("Выбор команды");
@@ -32,28 +23,27 @@ namespace Timirbaev_Erik_Lab_5
                 Console.WriteLine("0. Выход");
                 Console.WriteLine();
                 Console.Write("Введите номер от 0 до 6: ");
-                // Обработка выбора пользователя
                 switch (TimirbaevUtilities.GetCorrectNumber(0, 6))
                 {
                     case 0:
-                        return; // Выход из программы
+                        return;
                     case 1:
-                        products.AddCourier(); // Добавить обычного курьера
+                        products.AddCourier();
                         break;
                     case 2:
-                        products.AddAutoCourier(); // Добавить авто-курьера
+                        products.AddAutoCourier();
                         break;
                     case 3:
-                        products.ViewCouriers(); // Показать всех курьеров
+                        products.ViewCouriers();
                         break;
                     case 4:
-                        products.Dowloand(); // Загрузить из файла
+                        products.Dowloand();
                         break;
                     case 5:
-                        products.Save(); // Сохранить в файл
+                        products.Save();
                         break;
                     case 6:
-                        products.DeleteCouriers(); // Очистить список
+                        products.DeleteCouriers();
                         break;
                 }
             }
