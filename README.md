@@ -79,19 +79,19 @@
 
 ## Работа с файлами
 Данные сохраняются в **XML формате**:
-- xml
-- <ArrayOfTimirbaevCourier>
-  - <TimirbaevCourier>
-    - <id>1</id>
-    - <firstname>Иван</firstname>
-    - <surname>Петров</surname>
-    - <age>25</age>
-    - <phone>9215551212</phone>
-  - </TimirbaevCourier>
-- </ArrayOfTimirbaevCourier>
+xml
+<ArrayOfTimirbaevCourier>
+  <TimirbaevCourier>
+    <id>1</id>
+    <firstname>Иван</firstname>
+    <surname>Петров</surname>
+    <age>25</age>
+    <phone>9215551212</phone>
+  </TimirbaevCourier>
+</ArrayOfTimirbaevCourier>
 
-- Авторы
-- Захаров Кирилл Николаевич, Тимирбаев Эрик Эльдарович, Тимирбаев Эрнест Эльдарович
-- Технологии кроссплатформенной разработки
-- Группа: АС-22-04
-- Дата: 01.12.2025
+Авторы
+Захаров Кирилл Николаевич, Тимирбаев Эрик Эльдарович, Тимирбаев Эрнест Эльдарович
+Технологии кроссплатформенной разработки
+Группа: АС-22-04
+Дата: 01.12.2025
