@@ -10,56 +10,19 @@ using System.Xml.Serialization;
 
 namespace Timirbaev_Erik_Lab_5
 {
-    /// <summary>
-    /// Базовый класс, представляющий курьера.
-    /// Поддерживает XML-сериализацию и наследование для авто-курьеров.
-    /// </summary>
     [Serializable]
     [XmlInclude(typeof(TimirbaevAutoCourier))]
     public class TimirbaevCourier
     {
-        /// <summary>
-        /// Статический счетчик для генерации уникальных идентификаторов.
-        /// </summary>
         static int MaxId = 0;
-
-        /// <summary>
-        /// Уникальный идентификатор курьера.
-        /// </summary>
         public int id { get; set; }
-
-        /// <summary>
-        /// Имя курьера.
-        /// </summary>
         public string firstname { get; set; }
-
-        /// <summary>
-        /// Фамилия курьера.
-        /// </summary>
         public string surname { get; set; }
-
-        /// <summary>
-        /// Возраст курьера (от 18 до 60 лет).
-        /// </summary>
         public int age { get; set; }
-
-        /// <summary>
-        /// Номер телефона курьера (10 цифр без +7).
-        /// </summary>
         public string phone { get; set; }
-
-        /// <summary>
-        /// Конструктор по умолчанию. Автоматически назначает уникальный ID.
-        /// </summary>
         public TimirbaevCourier() { id = ++MaxId; }
-		
-		/// <summary>
-        /// Виртуальный метод для создания курьера через консольный ввод.
-        /// Запрашивает у пользователя данные и выполняет валидацию.
-        /// </summary>
         public virtual void CreateCourier()
         {
-            // Ввод имени
             while (true)
             {
                 Console.Write("Введите имя: ");
@@ -69,8 +32,6 @@ namespace Timirbaev_Erik_Lab_5
                 else
                     break;
             }
-
-            // Ввод фамилии
             while (true)
             {
                 Console.Write("Введите фамилию: ");
@@ -80,12 +41,8 @@ namespace Timirbaev_Erik_Lab_5
                 else
                     break;
             }
-
-            // Ввод возраста с валидацией
             Console.Write("Введите возраст: ");
             age = TimirbaevUtilities.GetCorrectNumber(18, 60);
-
-            // Ввод телефона с валидацией
             while (true)
             {
                 Console.Write("Введите номер телефона: +7");
@@ -96,10 +53,6 @@ namespace Timirbaev_Erik_Lab_5
                     break;
             }
         }
-
-        /// <summary>
-        /// Виртуальный метод для отображения информации о курьере в консоли.
-        /// </summary>
         public virtual void ShowCourier()
         {
             Console.WriteLine($"Id: {id}");
@@ -109,12 +62,7 @@ namespace Timirbaev_Erik_Lab_5
             Console.WriteLine($"Номер телефона: {phone}");
         }
 		
-		/// <summary>
-        /// Тестовый метод для проверки автоматической документации
-        /// </summary>
-        /// <param name="testParam">Тестовый параметр</param>
-        /// <returns>Всегда возвращает true</returns>
-        public bool TestAutoDocsMethod(string testParam)
+		public bool TestAutoDocsMethod(string testParam)
         {
             Console.WriteLine("Auto-docs test: " + testParam);
             return true;

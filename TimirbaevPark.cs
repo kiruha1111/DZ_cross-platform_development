@@ -8,22 +8,11 @@ using System.Xml.Serialization;
 
 namespace Timirbaev_Erik_Lab_5
 {
-    /// <summary>
-    /// Класс для управления парком курьеров.
-    /// Предоставляет методы для работы со списком курьеров и их сохранения в файл.
-    /// </summary>
     [Serializable]
     [XmlType("TimirbaevPark")]
     internal class TimirbaevPark
     {
-        /// <summary>
-        /// Список курьеров (обычных и авто-курьеров).
-        /// </summary>
         List<TimirbaevCourier> couriers = new List<TimirbaevCourier>();
-
-        /// <summary>
-        /// Добавляет обычного курьера в список.
-        /// </summary>
         public void AddCourier()
         {
             TimirbaevCourier courier = new TimirbaevCourier();
@@ -31,10 +20,6 @@ namespace Timirbaev_Erik_Lab_5
             couriers.Add(courier);
             Console.WriteLine();
         }
-
-        /// <summary>
-        /// Добавляет авто-курьера в список.
-        /// </summary>
         public void AddAutoCourier()
         {
             TimirbaevAutoCourier auto_courier = new TimirbaevAutoCourier();
@@ -42,10 +27,6 @@ namespace Timirbaev_Erik_Lab_5
             couriers.Add(auto_courier);
             Console.WriteLine();
         }
-
-        /// <summary>
-        /// Отображает информацию обо всех курьерах в списке.
-        /// </summary>
         public void ViewCouriers()
         {
             Console.WriteLine();
@@ -63,20 +44,12 @@ namespace Timirbaev_Erik_Lab_5
                 Console.WriteLine();
             }
         }
-
-        /// <summary>
-        /// Очищает список всех курьеров.
-        /// </summary>
         public void DeleteCouriers()
         {
             couriers.Clear();
             Console.WriteLine("Список очищен");
             Console.WriteLine();
         }
-
-        /// <summary>
-        /// Сохраняет список курьеров в XML файл.
-        /// </summary>
         public void Save()
         {
             Console.WriteLine();
@@ -86,11 +59,7 @@ namespace Timirbaev_Erik_Lab_5
                 {
                     Console.Write("Введите название файла: ");
                     string fileName = Console.ReadLine() + ".xml";
-
-                    // Создание сериализатора для списка курьеров
                     XmlSerializer serializer = new XmlSerializer(typeof(List<TimirbaevCourier>));
-
-                    // Сохранение в файл
                     using (FileStream file = new FileStream(fileName, FileMode.Create))
                     {
                         serializer.Serialize(file, couriers);
@@ -111,10 +80,6 @@ namespace Timirbaev_Erik_Lab_5
                 Console.WriteLine();
             }
         }
-
-        /// <summary>
-        /// Загружает список курьеров из XML файла.
-        /// </summary>
         public void Dowloand()
         {
             Console.WriteLine();
@@ -122,11 +87,7 @@ namespace Timirbaev_Erik_Lab_5
             {
                 Console.Write("Введите название файла: ");
                 string fileName = Console.ReadLine() + ".xml";
-
-                // Создание сериализатора для списка курьеров
                 XmlSerializer serializer = new XmlSerializer(typeof(List<TimirbaevCourier>));
-
-                // Загрузка из файла
                 using (FileStream file = new FileStream(fileName, FileMode.Open))
                 {
                     couriers = (List<TimirbaevCourier>)serializer.Deserialize(file);
